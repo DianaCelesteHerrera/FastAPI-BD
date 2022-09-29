@@ -23,3 +23,10 @@ class Autor(Base):
     ap_paterno = Column(String)
     ap_materno = Column(String)
     pais = Column(String)
+
+class Categoria(Base):
+    __tablename__ = 'categoria'
+
+    id_categoria = Column(Integer, primary_key=True, index=True)
+    nombre = Column(String)
+    tipo = Column(String)

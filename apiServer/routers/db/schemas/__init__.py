@@ -22,3 +22,9 @@ class Autores(BaseModel):
     ap_paterno: str
     ap_materno: str
     pais: str
+
+
+class Categorias(BaseModel):
+    id_categoria : Optional[int]
+    nombre: str
+    tipo : str 
